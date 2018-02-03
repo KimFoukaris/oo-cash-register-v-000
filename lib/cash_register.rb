@@ -26,4 +26,8 @@ class CashRegister
     message
   end
 
+  def items
+    self.items
+  end
+
 end
