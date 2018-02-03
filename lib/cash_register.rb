@@ -8,7 +8,7 @@ class CashRegister
   end
 
   def add_item(title, price, *quantity)
-    @items << title
+    #@items << title
     q = quantity[0]
     if q == nil
       q = 1
