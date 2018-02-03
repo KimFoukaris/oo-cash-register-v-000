@@ -24,4 +24,8 @@ class CashRegister
     message
   end
 
+  def items
+
+  end
+
 end
