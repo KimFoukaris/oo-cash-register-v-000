@@ -14,6 +14,7 @@ class CashRegister
     end
     self.total += price*q
     q.times {@items << title}
+    @last_transaction = price*q
   end
 
   def apply_discount
@@ -24,6 +25,10 @@ class CashRegister
       message = "There is no discount to apply."
     end
     message
+  end
+
+  def void_last_transaction
+    
   end
 
 end
