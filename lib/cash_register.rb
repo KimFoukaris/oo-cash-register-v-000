@@ -8,6 +8,7 @@ class CashRegister
   end
 
   def add_item(title, price, *quantity)
+    self.items << title
     q = quantity[0]
     if q == nil
       q = 1
@@ -23,10 +24,6 @@ class CashRegister
       message = "There is no discount to apply."
     end
     message
-  end
-
-  def items
-
   end
 
 end
